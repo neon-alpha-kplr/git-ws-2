@@ -29,3 +29,31 @@ def afficher_tous_les_eleves():
             print(f"ID : {id_eleve}, Nom : {nom_eleve}")
     else:
         print("Aucun élève dans la liste.")
+
+def gestion_eleves():
+    print("Bienvenue dans la gestion des élèves !")
+    while True:
+        print("\nMenu :")
+        print("1. Ajouter un élève")
+        print("2. Modifier un élève")
+        print("3. Supprimer un élève")
+        print("4. Afficher la liste complète des élèves")
+        print("5. Quitter")
+
+        choix = input("Veuillez sélectionner une option (1-5) : ")
+
+        if choix == "1":
+            ajouter_eleve()
+        elif choix == "2":
+            modifier_eleve()
+        elif choix == "3":
+            supprimer_eleve()
+        elif choix == "4":
+            afficher_tous_les_eleves()
+        elif choix == "5":
+            break
+        else:
+            print("Option invalide. Veuillez réessayer.")
+
+if __name__ == "__main__":
+    gestion_eleves()
