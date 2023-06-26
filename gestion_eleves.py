@@ -20,3 +20,12 @@ def supprimer_eleve():
         print("Élève supprimé avec succès !")
     else:
         print("L'élève n'existe pas.")
+
+eleves = {}
+def afficher_tous_les_eleves():
+    if eleves:
+        print("Liste complète des élèves :")
+        for id_eleve, nom_eleve in eleves.items():
+            print(f"ID : {id_eleve}, Nom : {nom_eleve}")
+    else:
+        print("Aucun élève dans la liste.")
