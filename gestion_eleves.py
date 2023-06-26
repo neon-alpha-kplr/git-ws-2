@@ -12,3 +12,11 @@ def modifier_eleve():
         print("Élève mis à jour avec succès !")
     else:
         print("L'élève n'existe pas.")
+
+def supprimer_élève():
+    id_eleve = input("Entrez l'identifiant de l'élève à supprimer : ")
+    if id_eleve in eleves:
+        del eleves[id_eleve]
+        print("Élève supprimé avec succès !")
+    else:
+        print("L'élève n'existe pas.")
