@@ -13,7 +13,7 @@ def modifier_eleve():
     else:
         print("L'élève n'existe pas.")
 
-def supprimer_élève():
+def supprimer_eleve():
     id_eleve = input("Entrez l'identifiant de l'élève à supprimer : ")
     if id_eleve in eleves:
         del eleves[id_eleve]
